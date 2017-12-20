@@ -1,6 +1,6 @@
 package patter.patter01.factory.easeFactory.abstractFactory;
 
-import com.java1234.helloWord.factory.easeFactory.ISend;
+import patter.patter01.factory.easeFactory.ISend;
 
 /**
  * <B>作者：</B>kobe<BR>

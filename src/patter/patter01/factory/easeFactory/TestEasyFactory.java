@@ -1,8 +1,12 @@
 package patter.patter01.factory.easeFactory;
 
-import com.java1234.helloWord.factory.easeFactory.abstractFactory.Iprovider;
-import com.java1234.helloWord.factory.easeFactory.abstractFactory.MailSendFactoryImpl;
-import com.java1234.helloWord.factory.easeFactory.abstractFactory.SmsSendFactoryImpl;
+//import com.java1234.helloWord.factory.easeFactory.abstractFactory.Iprovider;
+//import com.java1234.helloWord.factory.easeFactory.abstractFactory.MailSendFactoryImpl;
+//import com.java1234.helloWord.factory.easeFactory.abstractFactory.SmsSendFactoryImpl;
+
+import patter.patter01.factory.easeFactory.abstractFactory.Iprovider;
+import patter.patter01.factory.easeFactory.abstractFactory.MailSendFactoryImpl;
+import patter.patter01.factory.easeFactory.abstractFactory.SmsSendFactoryImpl;
 
 /**
  * <B>作者：</B>kobe<BR>

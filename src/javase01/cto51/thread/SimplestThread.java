@@ -13,5 +13,15 @@ public class SimplestThread {
         Thread simplestThread = new Thread();
         // 启动线程。调用start() 方法，它就会去调用 run() 方法，run() 方法执行完毕了，这个线程就执行完了。
         simplestThread.start();
+        // 返回的是一个枚举。
+        System.out.println("查看线程状态："+simplestThread.getState());
+
+        // 创建一个线程组。
+        ThreadGroup tg1 = new ThreadGroup("ThreadGroup");
+        // 把这个线程放在线程组里面并给它起一个名字。
+        Thread t1 = new Thread(tg1, "thread1");
+
+
+        System.out.println("获取当前线程名字："+Thread.currentThread().getName());
     }
 }

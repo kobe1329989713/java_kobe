@@ -9,7 +9,7 @@ package Gdish.G005.thread;
  */
 public class SyncDubbo1 {
 
-    // 都同步了。
+    // 都同步了。锁重入 问题。
     public synchronized void method1() {
         System.out.println("method1..");
         method2();

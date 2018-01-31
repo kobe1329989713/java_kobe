@@ -15,9 +15,9 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class VolatileNoAtomic extends Thread {
 
-//    private static volatile int count;
+//    private static volatile int count;   volatile 只是具备多个线程之间可见性而已。
 
-    // 每一个线程 来 都在 ++ 操作 ，所以没有原子性（同步）
+    // 每一个线程 来 都在 ++ 操作 ，所以没有原子性（同步）       AtomicInteger 它才具备原子性。
     private static AtomicInteger count = new AtomicInteger(0);
 
     private static void addCount() {

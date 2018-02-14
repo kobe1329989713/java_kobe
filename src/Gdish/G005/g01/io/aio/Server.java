@@ -26,7 +26,12 @@ public class Server {
 			assc.bind(new InetSocketAddress(port));
 			
 			System.out.println("server start , port : " + port);
-			//进行阻塞
+			// 以上这些操作就是 nio 里面的 把client 注册到server端，然后server端轮循所有的 selector 的状态，然后来做具体的事情 的哪些操作。
+			// 在aio 里面 这些操作全部给一个线程组去完成。
+
+
+
+			//进行阻塞 ServerCompletionHandler() 这个handler 是专门处理每人请求具体需要干什么事情的，然后把结果返回给 client端的线程。
 			assc.accept(this, new ServerCompletionHandler());
 			//一直阻塞 不让服务器停止
 			Thread.sleep(Integer.MAX_VALUE);

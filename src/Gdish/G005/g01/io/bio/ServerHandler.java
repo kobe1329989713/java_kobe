@@ -28,7 +28,10 @@ public class ServerHandler implements Runnable{
 				System.out.println("Server :" + body);
 				out.println("服务器端回送响的应数据.");
 			}
-			
+
+
+
+		// 以下都是一些关闭代码。
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {

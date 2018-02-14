@@ -1,10 +1,10 @@
 package Gdish.G005.g01.executors.disrupter.generate2;
 
-import bhz.generate1.Trade;
 
+import Gdish.G005.g01.executors.disrupter.generate1.Trade;
 import com.lmax.disruptor.EventHandler;
 
-public class Handler2 implements EventHandler<Trade> {  
+public class Handler2 implements EventHandler<Trade> {
 	  
     @Override  
     public void onEvent(Trade event, long sequence,  boolean endOfBatch) throws Exception {  

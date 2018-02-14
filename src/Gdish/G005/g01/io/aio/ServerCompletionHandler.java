@@ -7,6 +7,8 @@ import java.util.concurrent.ExecutionException;
 
 public class ServerCompletionHandler implements CompletionHandler<AsynchronousSocketChannel, Server> {
 
+
+	// 连接成功 执行的业务逻辑
 	@Override
 	public void completed(AsynchronousSocketChannel asc, Server attachment) {
 		//当有下一个客户端接入的时候 直接调用Server的accept方法，这样反复执行下去，保证多个客户端都可以阻塞
@@ -14,6 +16,7 @@ public class ServerCompletionHandler implements CompletionHandler<AsynchronousSo
 		read(asc);
 	}
 
+    // AsynchronousSocketChannel 它就是一个通道。
 	private void read(final AsynchronousSocketChannel asc) {
 		//读取数据
 		ByteBuffer buf = ByteBuffer.allocate(1024);
@@ -49,7 +52,9 @@ public class ServerCompletionHandler implements CompletionHandler<AsynchronousSo
 			e.printStackTrace();
 		}
 	}
-	
+
+
+	// 连接失败执行的业务逻辑。
 	@Override
 	public void failed(Throwable exc, Server attachment) {
 		exc.printStackTrace();

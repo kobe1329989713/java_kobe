@@ -5,6 +5,21 @@ import java.nio.IntBuffer;
 public class TestBuffer {
 	
 	public static void main(String[] args) {
+
+        /**
+         *
+         *  每个Buffer 三个属性：
+         *  1。位置(position)
+         *  2。limit（上限）
+         *  3。capacity 容量
+         *  如：打印， 3 10 10   上限和容量 都打印10 没有问题。
+         *      位置它是一个自增的，你每往Buffer 里面添加一个数据 它的位置就自增一个。 因为装了3个数据所以打印的是 3。
+         * buf.put(1, 4); 这个put　就是在哪个位置加入什么元素，它有一个覆盖的操作。
+         * ，你每次put() 和 get() 完了以后，必须要 flip()下，把 position 复位到0去。
+         *
+         * 用netty 框架时，你可以不用去管 flip() 它会自己复位的。 netty 低层也是封闭的是 nio 了，只不过netty 提供了一套更好用的API而已。
+         *
+         */
 		
 		// 1 基本操作
 		
@@ -23,10 +38,10 @@ public class TestBuffer {
 		System.out.println("获取下标为1的元素：" + buf.get(1));
 		System.out.println("get(index)方法，position位置不改变：" + buf);
 		buf.put(1, 4);
-		System.out.println("put(index, change)方法，position位置不变：" + buf);;
+		System.out.println("put(index, change)方法，position位置不变：" + buf);
 		
 		for (int i = 0; i < buf.limit(); i++) {
-			//调用get方法会使其缓冲区位置（position）向后递增一位
+			//调用get方法会使其缓冲区位置（position）向后递增一位，所以这里面就会报错（因为你覆盖哪里它的position也加了一次？？相当于多了一个没有的元素），你每次put() 完了以后，必须要 flip()下，把 position 复位到0去。
 			System.out.print(buf.get() + "\t");
 		}
 		System.out.println("buf对象遍历之后为: " + buf);

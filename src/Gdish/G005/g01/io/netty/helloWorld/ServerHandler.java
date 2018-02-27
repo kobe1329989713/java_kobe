@@ -1,13 +1,13 @@
-package Gdish.G005.g01.io.netty;
+package Gdish.G005.g01.io.netty.helloWorld;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
-import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
-import io.netty.util.ReferenceCountUtil;
 
+/**
+ * netty server端 Handler 处理类。
+ */
 public class ServerHandler  extends ChannelHandlerAdapter {
 
 	@Override
@@ -27,6 +27,7 @@ public class ServerHandler  extends ChannelHandlerAdapter {
 
 	}
 
+	// 出错时执行的方法。
 	@Override
 	public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
 		cause.printStackTrace();

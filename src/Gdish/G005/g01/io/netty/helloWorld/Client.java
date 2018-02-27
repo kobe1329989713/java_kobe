@@ -1,4 +1,4 @@
-package Gdish.G005.g01.io.netty;
+package Gdish.G005.g01.io.netty.helloWorld;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.Unpooled;
@@ -9,6 +9,9 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
+/**
+ * netty hello world
+ */
 public class Client {
 
 	public static void main(String[] args) throws Exception {

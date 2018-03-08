@@ -9,6 +9,10 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
+/**
+ * 它也是有 很多代码是可以复用的。 Client 和 server 端 它们的重点 都在哪个 XxxHandler 类里面
+ * 因为这个类都是主要处理业务的，其它的你都可以看作是一个模板了。
+ */
 public class Client {
 
 	public static void main(String[] args) throws Exception{

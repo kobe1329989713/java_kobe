@@ -29,7 +29,7 @@ public class Server {
 		.childHandler(new ChannelInitializer<SocketChannel>() {
 			@Override
 			protected void initChannel(SocketChannel sc) throws Exception {
-				//3 在这里配置具体数据接收方法的处理
+				//3 在这里配置具体数据接收方法的处理，XxxHandler 类了。
 				sc.pipeline().addLast(new ServerHandler());
 			}
 		});

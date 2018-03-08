@@ -27,9 +27,9 @@ public class Main {
         Provider p3 = new Provider(queue);
 
         // 消费者。
-        Consumer c1 = new Consumer(queue);
-        Consumer c2 = new Consumer(queue);
-        Consumer c3 = new Consumer(queue);
+//        Consumer c1 = new Consumer(queue);
+//        Consumer c2 = new Consumer(queue);
+//        Consumer c3 = new Consumer(queue);
 
         // 创建线程池。 带有缓存的线程池。
         ExecutorService cachePool = Executors.newCachedThreadPool();
@@ -37,9 +37,9 @@ public class Main {
         cachePool.execute(p1);
         cachePool.execute(p2);
         cachePool.execute(p3);
-        cachePool.execute(c1);
-        cachePool.execute(c2);
-        cachePool.execute(c3);
+//        cachePool.execute(c1);
+//        cachePool.execute(c2);
+//        cachePool.execute(c3);
 
         try {
             Thread.sleep(3000);

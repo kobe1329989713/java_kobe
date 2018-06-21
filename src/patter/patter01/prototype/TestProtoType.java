@@ -10,7 +10,7 @@ package patter.patter01.prototype;
 public class TestProtoType {
     public static void main(String[] args) {
         ProtoType p = new ProtoType();
-        p.setString("kobe");
+        p.setString("kobe01");
         System.out.println("pppppppp: "+p.getString());
         try {
             ProtoType p2 = (ProtoType) p.clone();

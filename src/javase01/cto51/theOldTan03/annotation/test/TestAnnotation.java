@@ -1,4 +1,4 @@
-package javase01.cto51.theOldTan03.annotation;
+package javase01.cto51.theOldTan03.annotation.test;
 
 /**
  * <B>作者：</B>kobe<BR>
@@ -13,6 +13,8 @@ public class TestAnnotation {
     public void testAdd() {
         System.out.println("Hello Add");
     }
+
+    @Test(num = 5)
     public void testDiv() {
         System.out.println("Hello Div");
     }

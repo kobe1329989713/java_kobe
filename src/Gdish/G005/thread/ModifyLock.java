@@ -52,7 +52,7 @@ public class ModifyLock {
         Thread t1 = new Thread(new Runnable() {
             @Override
             public void run() {
-                modifyLock.changeAttrubute("kobe",22);
+                modifyLock.changeAttrubute("kobe01",22);
             }
         },"t1");
         Thread t2 = new Thread(new Runnable() {

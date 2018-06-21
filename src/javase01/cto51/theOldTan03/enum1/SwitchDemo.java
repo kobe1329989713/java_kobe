@@ -17,7 +17,7 @@ public class SwitchDemo {
             case SUMMER:
                 return "222";
             default:
-                return "kobe";
+                return "kobe01";
 
         }
     }

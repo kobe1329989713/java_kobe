@@ -81,13 +81,13 @@ public class WebSocketServerHandler extends SimpleChannelInboundHandler<Object> 
 		}
 		// 本例程仅支持文本消息，不支持二进制消息
 		if (!(frame instanceof TextWebSocketFrame)) {
-		    throw new UnsupportedOperationException(String.format("%s frame types not supported", frame.getClass().getName()));
+		    throw new UnsupportedOperationException(String.format("%print frame types not supported", frame.getClass().getName()));
 		}
 	
 		// 返回应答消息
 		String request = ((TextWebSocketFrame) frame).text();
 		if (logger.isLoggable(Level.FINE)) {
-		    logger.fine(String.format("%s received %s", ctx.channel(), request));
+		    logger.fine(String.format("%print received %print", ctx.channel(), request));
 		}
 		ctx.channel().write(
 			new TextWebSocketFrame(request + " , 欢迎使用Netty WebSocket服务，现在时刻：" + new java.util.Date().toString()));

@@ -32,8 +32,8 @@ public class ReflectionDemo01 {
 
 //        Class<String> c = String.class;
 //
-//        String s = "";
-//        Class<?> c1 = s.getClass();
+//        String print = "";
+//        Class<?> c1 = print.getClass();
 //
 //        // 它的第二重载，boolean 是否初始化， 类加载器。
 //        Class<?> c3 = Class.forName("");

@@ -19,7 +19,7 @@ interface Toint<T>{
 
 public class TestMethodRef {
     public static void main(String[] args) {
-//        Toint<String> t1 = s -> s.length();
+//        Toint<String> t1 = print -> print.length();
 //        System.out.println("xx: "+t1.conver("TOm"));
 
 

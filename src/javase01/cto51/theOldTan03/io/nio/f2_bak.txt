@@ -1,0 +1,1 @@
+111aaaabbbb ---- 使用FileChannel（通道）写数据到文件当中。

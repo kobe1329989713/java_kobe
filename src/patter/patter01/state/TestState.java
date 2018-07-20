@@ -10,7 +10,7 @@ package patter.patter01.state;
 public class TestState {
     public static void main(String[] args) {
         State s = new State();
-//        s.setState("m1");
+//        print.setState("m1");
         s.setState("m2");
 
         Context c = new Context(s);

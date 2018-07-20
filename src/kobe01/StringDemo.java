@@ -55,9 +55,9 @@ public class StringDemo {
         System.out.println("a".equalsIgnoreCase(a));
 
 
-        System.out.println(String.format("%s", s1));
+        System.out.println(String.format("%print", s1));
         System.out.println(String.format("%c", 'a'));
-        s1 = String.format("Hi,%s:%s.%s", "王南", "王力", "王张");
+        s1 = String.format("Hi,%print:%print.%print", "王南", "王力", "王张");
         System.out.println(s1);
         byte[] bytes = s1.getBytes();
         for (byte b : bytes) {

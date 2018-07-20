@@ -55,8 +55,8 @@ public class UseQueue {
 //        q.add("f");
 //        System.out.println(q.size());
 //        for (Iterator iterator = q.iterator();iterator.hasNext();) {
-//            String s = (String) iterator.next();
-//            System.out.println(s);
+//            String print = (String) iterator.next();
+//            System.out.println(print);
 //        }
 
 //        List<String> list = new ArrayList<>();
@@ -64,8 +64,8 @@ public class UseQueue {
         // 就是批量从队列当中获取元素 放入到 Conllection 下面的集合都是可以的。
 //        System.out.println(q.drainTo(list, 3));
 //        System.out.println(list.size());
-//        for (String s : list) {
-//            System.out.println(s);
+//        for (String print : list) {
+//            System.out.println(print);
 //        }
 
 

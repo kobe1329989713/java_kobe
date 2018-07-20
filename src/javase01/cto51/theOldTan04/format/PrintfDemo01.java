@@ -9,16 +9,16 @@ package javase01.cto51.theOldTan04.format;
  */
 public class PrintfDemo01 {
     public static void main(String[] args) {
-        // %s,%s,%s 会按照 %s,%s,%s 这种格式进行输出 ，它们就像是 点位符样，和日志里面的 {} 是一样的。
-//        System.out.printf("%s,%s,%s","a","b","c");
+        // %print,%print,%print 会按照 %print,%print,%print 这种格式进行输出 ，它们就像是 点位符样，和日志里面的 {} 是一样的。
+//        System.out.printf("%print,%print,%print","a","b","c");
 
 
-//        System.out.printf("%1$s,%3$s,%3$s","a","b","c");
+//        System.out.printf("%1$print,%3$print,%3$print","a","b","c");
 
 
-//        System.out.printf("%1$s,%3$s,%<s","a","b","c");
+//        System.out.printf("%1$print,%3$print,%<print","a","b","c");
 
-//        System.out.printf("%s","a");
+//        System.out.printf("%print","a");
         // 在前面补空格。
 //        System.out.printf("%4s","a");
         // 在后面补空格。
